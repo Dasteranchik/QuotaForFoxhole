@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuotaForFoxhole", "QuotaForFoxhole\QuotaForFoxhole.csproj", "{1CD37FBD-447A-4F0E-AF9F-C35C9DE9D9FD}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "NOD_Quota", "NOD_Quota\NOD_Quota.vdproj", "{04AFC356-2183-4680-971C-90A16A874419}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CD37FBD-447A-4F0E-AF9F-C35C9DE9D9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD37FBD-447A-4F0E-AF9F-C35C9DE9D9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD37FBD-447A-4F0E-AF9F-C35C9DE9D9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD37FBD-447A-4F0E-AF9F-C35C9DE9D9FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04AFC356-2183-4680-971C-90A16A874419}.Debug|Any CPU.ActiveCfg = Debug
+		{04AFC356-2183-4680-971C-90A16A874419}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5956994A-126B-42CF-B088-A3D8B173EB24}
+	EndGlobalSection
+EndGlobal

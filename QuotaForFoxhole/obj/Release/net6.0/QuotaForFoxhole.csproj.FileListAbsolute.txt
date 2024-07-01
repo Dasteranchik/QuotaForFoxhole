@@ -1,0 +1,17 @@
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\bin\Release\net6.0\QuotaForFoxhole.exe
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\bin\Release\net6.0\QuotaForFoxhole.deps.json
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\bin\Release\net6.0\QuotaForFoxhole.runtimeconfig.json
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\bin\Release\net6.0\QuotaForFoxhole.dll
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\bin\Release\net6.0\QuotaForFoxhole.pdb
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\bin\Release\net6.0\ConsoleTables.dll
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Release\net6.0\QuotaForFoxhole.csproj.AssemblyReference.cache
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Release\net6.0\QuotaForFoxhole.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Release\net6.0\QuotaForFoxhole.AssemblyInfoInputs.cache
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Release\net6.0\QuotaForFoxhole.AssemblyInfo.cs
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Release\net6.0\QuotaForFoxhole.csproj.CoreCompileInputs.cache
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Release\net6.0\QuotaForFoxhole.csproj.CopyComplete
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Release\net6.0\QuotaForFoxhole.dll
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Release\net6.0\refint\QuotaForFoxhole.dll
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Release\net6.0\QuotaForFoxhole.pdb
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Release\net6.0\QuotaForFoxhole.genruntimeconfig.cache
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Release\net6.0\ref\QuotaForFoxhole.dll

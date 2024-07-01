@@ -1,0 +1,6 @@
+C:\Users\Ilya\Desktop\qwe\QuotaForFoxhole.exe
+C:\Users\Ilya\Desktop\qwe\QuotaForFoxhole.dll
+C:\Users\Ilya\Desktop\qwe\QuotaForFoxhole.deps.json
+C:\Users\Ilya\Desktop\qwe\QuotaForFoxhole.runtimeconfig.json
+C:\Users\Ilya\Desktop\qwe\QuotaForFoxhole.pdb
+C:\Users\Ilya\Desktop\qwe\ConsoleTables.dll
