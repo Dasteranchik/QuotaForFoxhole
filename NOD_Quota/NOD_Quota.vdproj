@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_629AF4CBF38A485A87D8C8C75F717D2D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_AEA1079F3F74438699735EC4838A2F0E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -90,6 +96,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -121,6 +135,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_629AF4CBF38A485A87D8C8C75F717D2D"
+            {
+            "SourcePath" = "8:..\\QuotaForFoxhole\\bin\\Debug\\net6.0\\Список предметов.txt"
+            "TargetName" = "8:Список предметов.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_8A0F3881AFC04ECFB78553B07484BAAE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AEA1079F3F74438699735EC4838A2F0E"
             {
             "SourcePath" = "8:..\\QuotaForFoxhole\\quota.txt"
@@ -209,7 +243,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:NOD_Quota"
         "ProductCode" = "8:{BF396436-1470-4A70-9A10-24168D615753}"
-        "PackageCode" = "8:{B23601B8-1C56-4EC6-BA81-5B41CFB0DCCB}"
+        "PackageCode" = "8:{A127BC1A-3F72-415A-9E3C-DD8F31BAB8F6}"
         "UpgradeCode" = "8:{6F6AC1BC-E8D3-4032-90BE-7D17D55984FE}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

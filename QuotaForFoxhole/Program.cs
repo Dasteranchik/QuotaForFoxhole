@@ -149,7 +149,7 @@
         }
 
         // Разделение на группы
-        var groupedQuotas = SplitIntoGroups(newQuotas, 4, true);
+        var groupedQuotas = SplitIntoGroups(newQuotas, numberOfGroups, true);
 
         // Вывод результатов
         int groupNumber = 1;
