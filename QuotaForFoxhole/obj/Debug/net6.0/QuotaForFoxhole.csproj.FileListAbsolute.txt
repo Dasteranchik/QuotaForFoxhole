@@ -14,4 +14,6 @@ D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Debug\net6.0\QuotaForFoxhole.pdb
 D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Debug\net6.0\QuotaForFoxhole.genruntimeconfig.cache
 D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Debug\net6.0\ref\QuotaForFoxhole.dll
 D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\bin\Debug\net6.0\ConsoleTables.dll
-D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Debug\net6.0\QuotaForFoxhole.csproj.CopyComplete
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Debug\net6.0\QuotaForFoxhole.sourcelink.json
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\obj\Debug\net6.0\QuotaFor.015B0125.Up2Date
+D:\VS\C#\QuotaForFoxhole\QuotaForFoxhole\bin\Debug\net6.0\Newtonsoft.Json.dll

@@ -1,0 +1,1224 @@
+[
+  {
+    "Name": "Штурмовая винтовка Booker Model 838",
+    "Quantity": 0,
+    "Bmats": 165,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Штурмовая винтовка Aalto 24",
+    "Quantity": 0,
+    "Bmats": 165,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "7.92-мм",
+    "Quantity": 0,
+    "Bmats": 120,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Malone MK.2",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 25,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Осколочная граната A3 Harpa",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 20,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Cascadier 873",
+    "Quantity": 0,
+    "Bmats": 60,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "8-mm",
+    "Quantity": 0,
+    "Bmats": 40,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Cometa T2-9",
+    "Quantity": 0,
+    "Bmats": 60,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Хангман 757",
+    "Quantity": 0,
+    "Bmats": 125,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": ".44",
+    "Quantity": 0,
+    "Bmats": 40,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Автоматическая винтовка Sampo 77",
+    "Quantity": 0,
+    "Bmats": 125,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Blacherow 871",
+    "Quantity": 0,
+    "Bmats": 140,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Clancy cinder M3",
+    "Quantity": 0,
+    "Bmats": 130,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "No.2B hawthorne",
+    "Quantity": 0,
+    "Bmats": 70,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "No.2 Loughcaster",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Clancy-Raca M4",
+    "Quantity": 0,
+    "Bmats": 200,
+    "Emats": 0,
+    "Rmats": 15,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "7.62-мм",
+    "Quantity": 0,
+    "Bmats": 80,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Дробовик Brasa",
+    "Quantity": 0,
+    "Bmats": 80,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Дробь",
+    "Quantity": 0,
+    "Bmats": 80,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Пистолет-пулемет No.1 \"The Liar\"",
+    "Quantity": 0,
+    "Bmats": 120,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Пистолет-пулемет Fiddler Model 868",
+    "Quantity": 0,
+    "Bmats": 120,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "9-мм",
+    "Quantity": 0,
+    "Bmats": 80,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Дымовая граната PT-815",
+    "Quantity": 0,
+    "Bmats": 120,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Газовая граната",
+    "Quantity": 0,
+    "Bmats": 140,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "12.7-мм",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Противотанковое ружье Neville 20",
+    "Quantity": 0,
+    "Bmats": 150,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "20-мм",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Станковый Bonesaw MK.3",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 5,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Bonesaw MK.3",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Навесная кумулятивная граната",
+    "Quantity": 0,
+    "Bmats": 60,
+    "Emats": 75,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Willow's Bane Model 845",
+    "Quantity": 0,
+    "Bmats": 165,
+    "Emats": 0,
+    "Rmats": 30,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Граната Tremola Gpb-1",
+    "Quantity": 0,
+    "Bmats": 75,
+    "Emats": 50,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Malone Ratcatcher MK.1",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 5,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "30-mm",
+    "Quantity": 0,
+    "Bmats": 80,
+    "Emats": 20,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Мортира Cremari",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Осветительный Минометный Снаряд",
+    "Quantity": 0,
+    "Bmats": 60,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Осколочный Минометный Снаряд",
+    "Quantity": 0,
+    "Bmats": 60,
+    "Emats": 15,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Минометный Снаряды",
+    "Quantity": 0,
+    "Bmats": 60,
+    "Emats": 35,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "BF5 White Ash Flask Grenade",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 40,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "B2 Varsi Anti-Tank Grenade",
+    "Quantity": 0,
+    "Bmats": 95,
+    "Emats": 125,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Mammon 91-b",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Противотанковая Липкая Бомба",
+    "Quantity": 0,
+    "Bmats": 50,
+    "Emats": 50,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Catler Foebreaker",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 5,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Cutler Launcher 4",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 35,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "РПГ",
+    "Quantity": 0,
+    "Bmats": 60,
+    "Emats": 45,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "150-мм",
+    "Quantity": 0,
+    "Bmats": 120,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "120-мм",
+    "Quantity": 0,
+    "Bmats": 60,
+    "Emats": 15,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "250-мм",
+    "Quantity": 0,
+    "Bmats": 120,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "68-мм",
+    "Quantity": 0,
+    "Bmats": 120,
+    "Emats": 120,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "40-мм",
+    "Quantity": 0,
+    "Bmats": 160,
+    "Emats": 120,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Припасы обслуживания",
+    "Quantity": 0,
+    "Bmats": 250,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Шинель Специалиста",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Стальная кираса",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Саперное снаряжение",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Куртка врача",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Офицерская регалия",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Дозорная мантия",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Caovish Парка",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Стеганный Комбинезон",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Колючая проволока",
+    "Quantity": 0,
+    "Bmats": 15,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Бинокль",
+    "Quantity": 0,
+    "Bmats": 75,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Хавок Заряд",
+    "Quantity": 0,
+    "Bmats": 75,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Топливо для Willow's Bane",
+    "Quantity": 0,
+    "Bmats": 135,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 5,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Набор для прослушивания",
+    "Quantity": 0,
+    "Bmats": 150,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Металлическая балка",
+    "Quantity": 0,
+    "Bmats": 25,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Радиорюкзак",
+    "Quantity": 0,
+    "Bmats": 150,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Мешок с песком",
+    "Quantity": 0,
+    "Bmats": 15,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Детонатор Хавок Заряда",
+    "Quantity": 0,
+    "Bmats": 75,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 5,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Alligator Charge",
+    "Quantity": 0,
+    "Bmats": 150,
+    "Emats": 80,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Лопата",
+    "Quantity": 0,
+    "Bmats": 200,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Кувалда",
+    "Quantity": 0,
+    "Bmats": 200,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Abisme AT-99",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Тренога",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Ключ",
+    "Quantity": 0,
+    "Bmats": 75,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Ведро для воды",
+    "Quantity": 0,
+    "Bmats": 50,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Buckhorn CCQ-18",
+    "Quantity": 0,
+    "Bmats": 40,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Противогаз",
+    "Quantity": 0,
+    "Bmats": 160,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Фильтр для противогаза",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Osrpeay",
+    "Quantity": 0,
+    "Bmats": 85,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Рация",
+    "Quantity": 0,
+    "Bmats": 75,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Бинты",
+    "Quantity": 0,
+    "Bmats": 80,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Набор Первой Помощи",
+    "Quantity": 0,
+    "Bmats": 60,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Реанимационный набор",
+    "Quantity": 0,
+    "Bmats": 80,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Плазма",
+    "Quantity": 0,
+    "Bmats": 80,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Солдатское снаряжение",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "БМаты",
+    "Quantity": 0,
+    "Bmats": 100,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": false,
+    "IsVehicle": false
+  },
+  {
+    "Name": "Dunne Responder 3e",
+    "Quantity": 0,
+    "Bmats": 450,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "O'Brien v.190 Knave",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 120,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "O'Brien v.110",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 75,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Dunne Caravaner 2F",
+    "Quantity": 0,
+    "Bmats": 300,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Noble Widow MK. XIV",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 480,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Collins Cannon 68mm",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 60,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Balfour Wolfhound 40mm",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 60,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Swallowtail 988/127-2",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 60,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Balfour Falconer 250mm",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 105,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "BMS - Packmule Flatbed",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 90,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Niska Mk. I Gun Motor Carriage",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 180,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Mulloy LPC",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 60,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Devitt Mk. III",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 360,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Gallagher Brigand Mk. I",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 450,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Silverhand - Mk. IV",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 465,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Kivela Power Wheel 80-1",
+    "Quantity": 0,
+    "Bmats": 255,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "King Spire Mk. I",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 210,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Drummond 100a",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 30,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Rooster - Junkwagon",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 30,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Dunne Fuelrunner 2d",
+    "Quantity": 0,
+    "Bmats": 300,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Dunne Loadlugger 3c",
+    "Quantity": 0,
+    "Bmats": 360,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Dunne Transport",
+    "Quantity": 0,
+    "Bmats": 300,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "BMS - Aquatipper",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 450,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "BMS - Ironship",
+    "Quantity": 0,
+    "Bmats": 1500,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "74b-1 Ronan Gunship",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 420,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "BMS - Universal Assemly Rig",
+    "Quantity": 0,
+    "Bmats": 300,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "BMS - Class 2 Mobile Auto-Crane",
+    "Quantity": 0,
+    "Bmats": 375,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Leary Shellbore 68mm",
+    "Quantity": 0,
+    "Bmats": 450,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Huber Exalt 150mm",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 525,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Leary Snare Trap 127",
+    "Quantity": 0,
+    "Bmats": 225,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Huber Lariat 120mm",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 105,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Material pallet",
+    "Quantity": 0,
+    "Bmats": 75,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Resource Container",
+    "Quantity": 0,
+    "Bmats": 150,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Shipping Container",
+    "Quantity": 0,
+    "Bmats": 300,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Concrete Mixer",
+    "Quantity": 0,
+    "Bmats": 0,
+    "Emats": 0,
+    "Rmats": 225,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  },
+  {
+    "Name": "Fuel Container",
+    "Quantity": 0,
+    "Bmats": 300,
+    "Emats": 0,
+    "Rmats": 0,
+    "Hmats": 0,
+    "IsMassFactory": true,
+    "IsVehicle": true
+  }
+]
+
+

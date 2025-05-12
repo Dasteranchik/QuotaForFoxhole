@@ -1,4 +1,9 @@
-﻿class Program
+﻿using Newtonsoft.Json;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+
+class Program
 {
     class Quota
     {
@@ -31,110 +36,19 @@
             Rmats = rmats;
             Hmats = hmats;
             IsMassFactory = isMassFactory;
+            IsVehicle = isVehicle;
         }
     }
 
     static void Main()
     {
-        // Хардкод массива объектов Quota
-        Quota[] quotas = new Quota[]
-        {
-            new Quota("Штурмовая винтовка Booker Model 838", 0, 165, 0, 0, 0, true, false),
-            new Quota("Штурмовая винтовка Aalto 24", 0, 165, 0, 0, 0, true, false),
-            new Quota("7.92-мм", 0, 120, 0, 0, 0, true, false),
-            new Quota("Malone MK.2", 0, 0, 0, 25, 0, true, false),
-            new Quota("Осколочная граната A3 Harpa", 0, 100, 20, 0, 0, true, false),
-            new Quota("Cascadier 873", 0, 60, 0, 0, 0, true, false),
-            new Quota("8-mm", 0, 40, 0, 0, 0, true, false),
-            new Quota("Cometa T2-9", 0, 60, 0, 0, 0, true, false),
-            new Quota("Хангман 757", 0, 125, 0, 0, 0, true, false),
-            new Quota(".44", 0, 40, 0, 0, 0, true, false),
-            new Quota("Автоматическая винтовка Sampo 77", 0, 125, 0, 0, 0, true, false),
-            new Quota("Blacherow 871", 0, 140, 0, 0, 0, true, false),
-            new Quota("Clancy cinder M3", 0, 130, 0, 0, 0, true, false),
-            new Quota("No.2B hawthorne", 0, 70, 0, 0, 0, true, false),
-            new Quota("No.2 Loughcaster", 0, 100, 0, 0, 0, true, false),
-            new Quota("Clancy-Raca M4", 0, 200, 0, 15, 0, true, false),
-            new Quota("7.62-мм", 0, 80, 0, 0, 0, true, false),
-            new Quota("Дробовик Brasa", 0, 80, 0, 0, 0, true, false),
-            new Quota("Дробь", 0, 80, 0, 0, 0, true, false),
-            new Quota("Пистолет-пулемет No.1 \"The Liar\"", 0, 120, 0, 0, 0, true, false),
-            new Quota("Пистолет-пулемет Fiddler Model 868", 0, 120, 0, 0, 0, true, false),
-            new Quota("9-мм", 0, 80, 0, 0, 0, true, false),
-            new Quota("Дымовая граната PT-815", 0, 120, 0, 0, 0, true, false),
-            new Quota("Газовая граната", 0, 140, 0, 0, 0, true, false),
-            new Quota("12.7-мм", 0, 100, 0, 0, 0, true, false),
-
-            new Quota("Противотанковое ружье Neville 20", 0, 150, 0, 0, 0, true, false),
-            new Quota("20-мм", 0, 100, 0, 0, 0, true, false),
-            new Quota("Станковый Bonesaw MK.3", 0, 100, 0, 5, 0, true, false),
-            new Quota("Bonesaw MK.3", 0, 100, 0, 0, 0, true, false),
-            new Quota("Навесная кумулятивная граната", 0, 60, 75, 0, 0, true, false),
-            new Quota("Willow's Bane Model 845", 0, 165, 0, 30, 0, true, false),
-            new Quota("Граната Tremola Gpb-1", 0, 75, 50, 0, 0, true, false),
-            new Quota("Malone Ratcatcher MK.1", 0, 100, 0, 5, 0, true, false),
-            new Quota("30-mm", 0, 80, 20, 0, 0, true, false),
-            new Quota("Мортира Cremari", 0, 100, 0, 0, 0, true, false),
-            new Quota("Осветительный Минометный Снаряд", 0, 60, 0, 0, 0, true, false),
-            new Quota("Осколочный Минометный Снаряд", 0, 60, 15, 0, 0, true, false),
-            new Quota("Минометный Снаряды", 0, 60, 35, 0, 0, true, false),
-            new Quota("BF5 White Ash Flask Grenade", 0, 100, 40, 0, 0, true, false),
-            new Quota("Mammon 91-b", 0, 100, 0, 0, 0, true, false),
-            new Quota("Противотанковая Липкая Бомба", 0, 50, 50, 0, 0, true, false),
-            new Quota("Catler Foebreaker", 0, 100, 0, 5, 0, true, false),
-            new Quota("Cutler Launcher 4", 0, 100, 0, 35, 0, true, false),
-            new Quota("РПГ", 0, 60, 45, 0, 0, true, false),
-
-            new Quota("150-мм", 0, 120, 0, 0, 0, true, false),
-            new Quota("120-мм", 0, 60, 15, 0, 0, true, false),
-            new Quota("250-мм", 0, 120, 0, 0, 0, true, false),
-            new Quota("68-мм", 0, 120, 120, 0, 0, true, false),
-            new Quota("40-мм", 0, 160, 120, 0, 0, true, false),
-
-            new Quota("Припасы обслуживания", 0, 250, 0, 0, 0, true, false),
-
-            new Quota("Шинель Специалиста", 0, 100, 0, 0, 0, true, false),
-            new Quota("Стальная кираса", 0, 100, 0, 0, 0, true, false),
-            new Quota("Саперное снаряжение", 0, 100, 0, 0, 0, true, false),
-            new Quota("Куртка врача", 0, 100, 0, 0, 0, true, false),
-            new Quota("Офицерская регалия", 0, 100, 0, 0, 0, true, false),
-            new Quota("Дозорная мантия", 0, 100, 0, 0, 0, true, false),
-            new Quota("Caovish Парка", 0, 100, 0, 0, 0, true, false),
-            new Quota("Стеганный Комбинезон", 0, 100, 0, 0, 0, true, false),
-
-            new Quota("Колючая проволока", 0, 15, 0, 0, 0, false, false),
-            new Quota("Бинокль", 0, 75, 0, 0, 0, false, false),
-            new Quota("Хавок Заряд", 0, 75, 0, 0, 0, false, false),
-            new Quota("Топливо для Willow's Bane", 0, 135, 0, 0, 5, false, false),
-            new Quota("Набор для прослушивания", 0, 150, 0, 0, 0, false, false),
-            new Quota("Металлическая балка", 0, 25, 0, 0, 0, false, false),
-            new Quota("Радиорюкзак", 0, 150, 0, 0, 0, false, false),
-            new Quota("Мешок с песком", 0, 15, 0, 0, 0, false, false),
-            new Quota("Детонатор Хавок Заряда", 0, 75, 0, 0, 5, false, false),
-            new Quota("Alligator Charge", 0, 150, 80, 0, 0, false, false),
-            new Quota("Лопата", 0, 200, 0, 0, 0, false, false),
-            new Quota("Кувалда", 0, 200, 0, 0, 0, false, false),
-            new Quota("Abisme AT-99", 0, 100, 0, 0, 0, false, false),
-            new Quota("Тренога", 0, 100, 0, 0, 0, false, false),
-            new Quota("Ключ", 0, 75, 0, 0, 0, false, false),
-            new Quota("Ведро для воды", 0, 80, 0, 0, 0, false, false),
-            new Quota("Buckhorn CCQ-18", 0, 40, 0, 0, 0, false, false),
-            new Quota("Противогаз", 0, 160, 0, 0, 0, false, false),
-            new Quota("Фильтр для противогаза", 0, 100, 0, 0, 0, false, false),
-            new Quota("Osrpeay", 0, 85, 0, 0, 0, false, false),
-            new Quota("Рация", 0, 75, 0, 0, 0, false, false),
-
-            new Quota("Бинты", 0, 80, 0, 0, 0, false, false),
-            new Quota("Набор Первой Помощи", 0, 60, 0, 0, 0, false, false),
-            new Quota("Реанимационный набор", 0, 80, 0, 0, 0, false, false),
-            new Quota("Плазма", 0, 80, 0, 0, 0, false, false),
-            new Quota("Солдатское снаряжение", 0, 100, 0, 0, 0, false, false)
-
-        };
-
         int numberOfGroups;
         // Чтение данных из txt файла
         List<(string Name, int Quantity)> newQuotasData = ReadQuotasFromTxt("quotas.txt", out numberOfGroups);
+
+        string jsonFilePath = "quotas.json";
+
+        List<Quota> quotas = LoadQuotasFromJson(jsonFilePath);
 
         // Создание нового массива объектов Quota
         List<Quota> newQuotas = new List<Quota>();
@@ -209,6 +123,25 @@
     }
 
     /// <summary>
+    /// Метод для загрузки данных из JSON файла
+    /// </summary>
+    /// <param name="filePath">Путь к JSON файлу</param>
+    /// <returns></returns>
+    static List<Quota> LoadQuotasFromJson(string filePath)
+    {
+        try
+        {
+            string json = File.ReadAllText(filePath);
+            return JsonConvert.DeserializeObject<List<Quota>>(json);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ошибка при загрузке данных из JSON файла: {ex.Message}");
+            return new List<Quota>(); // Возвращаем пустой список в случае ошибки
+        }
+    }
+
+    /// <summary>
     /// Чтение файла с квотой
     /// </summary>
     /// <param name="filePath">Путь к файлу</param>
@@ -237,11 +170,33 @@
 
                 while ((line = reader.ReadLine()) != null)
                 {
-                    parts = line.Split(',');
-                    if (parts.Length == 2 && int.TryParse(parts[1].Trim(), out int quantity))
+                    if (string.IsNullOrWhiteSpace(line)) continue;
+
+                    // Нормализация строки
+                    line = line.Trim();
+                    line = Regex.Replace(line, @"\s+", " ");
+                    line = line.Replace("–", "-").Replace("—", "-");
+
+                    bool matched = false;
+
+                    // Количественное значение в начале строки
+                    Match numberStart = Regex.Match(line, @"^(\d+)\s*(ящ\.|шт\.)\s*[-,]\s*(.+?)\s*$", RegexOptions.IgnoreCase);
+                    if (numberStart.Success && int.TryParse(numberStart.Groups[1].Value, out int quantityStart))
                     {
-                        var name = parts[0].Trim();
-                        quotas.Add((name, quantity));
+                        string name = numberStart.Groups[3].Value.Trim(' ', '-', ',', '.');
+                        quotas.Add((name, quantityStart));
+                        matched = true;
+                    }
+
+                    // Количественное значение в конце строки
+                    if (!matched)
+                    {
+                        Match nameQuantityMatch = Regex.Match(line, @"^(.+?)\s*[-,]\s*(\d+)\s*(ящ\.|шт\.|кор\.|мм|mm)?\s*$", RegexOptions.IgnoreCase);
+                        if (nameQuantityMatch.Success && int.TryParse(nameQuantityMatch.Groups[2].Value, out int quantityName))
+                        {
+                            string name = nameQuantityMatch.Groups[1].Value.Trim(' ', '-', ',', '.');
+                            quotas.Add((name, quantityName));
+                        }
                     }
                 }
             }
@@ -314,12 +269,18 @@
         //q.Quantity * q.Bmats + q.Quantity * q.Emats * ratio + q.Quantity * q.Rmats + q.Quantity * q.Hmats);
 
         // Распределение по группам
+        int groupCount = groupedQuotas.Count;  // Количество групп
+        int currentIndex = 0;  // Индекс текущей группы
+
         foreach (var quota in sortedQuotas)
         {
-            var minGroup = groupedQuotas.OrderBy(g => g.Sum(q => q.Bmats)).First();
-         //q.Quantity* q.Bmats + q.Quantity * q.Emats * ratio + q.Quantity * q.Rmats + q.Quantity * q.Hmats)).First();
-            minGroup.Add(quota);
+            // Добавляем в текущую группу
+            groupedQuotas.ElementAt(currentIndex).Add(quota);
+
+            // Переходим к следующей группе
+            currentIndex = (currentIndex + 1) % groupCount;  // Это обеспечивает циклический переход через группы
         }
+
 
         return groupedQuotas;
     }

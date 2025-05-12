@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FOQJJTaAY5A5MV9h1jOziO9M/Hu3FiU5TCqUUf0V84HTuP/V+4TVO/PgHik+x2wTjdQP5J6KjiPqzSlhUs/NOw==",
+  "dgSpecHash": "6YNFzpiKjds=",
   "success": true,
   "projectFilePath": "D:\\VS\\C#\\QuotaForFoxhole\\QuotaForFoxhole\\QuotaForFoxhole.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Ilya\\.nuget\\packages\\consoletables\\2.6.1\\consoletables.2.6.1.nupkg.sha512"
+    "C:\\Users\\Ilya\\.nuget\\packages\\consoletables\\2.6.1\\consoletables.2.6.1.nupkg.sha512",
+    "C:\\Users\\Ilya\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
