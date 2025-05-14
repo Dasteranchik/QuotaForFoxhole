@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuotaForFoxhole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8973a0364334768f2b62228f58d1310aac30e33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65ccb0a0c11b199f515756656741650019eef453")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuotaForFoxhole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuotaForFoxhole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

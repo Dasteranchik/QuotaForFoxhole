@@ -42,9 +42,17 @@ class Program
 
     static void Main()
     {
-        int numberOfGroups;
+        Console.Write("Введите количество подразделений: ");
+        int? numberOfDivisions = int.Parse(Console.ReadLine());
+        List <int> numberOfFighters = new List<int>();
+
+        for (int i = 1; i <= numberOfDivisions; i++)
+        {
+            Console.Write($"Численность бойцов {i} подразделения: ");
+            numberOfFighters.Add(int.Parse(Console.ReadLine()));
+        }
         // Чтение данных из txt файла
-        List<(string Name, int Quantity)> newQuotasData = ReadQuotasFromTxt("quotas.txt", out numberOfGroups);
+        List<(string Name, int Quantity)> newQuotasData = ReadQuotasFromTxt("quotas.txt");
 
         string jsonFilePath = "quotas.json";
 
@@ -63,7 +71,7 @@ class Program
         }
 
         // Разделение на группы
-        var groupedQuotas = SplitIntoGroups(newQuotas, numberOfGroups, true);
+        var groupedQuotas = SplitIntoGroups(newQuotas, numberOfFighters, true);
 
         // Вывод результатов
         int groupNumber = 1;
@@ -148,26 +156,15 @@ class Program
     /// <param name="numberOfGroups">Количество групп</param>
     /// <returns>Список квоты</returns>
     /// <exception cref="FormatException"></exception>
-    public static List<(string Name, int Quantity)> ReadQuotasFromTxt(string filePath, out int numberOfGroups)
+    public static List<(string Name, int Quantity)> ReadQuotasFromTxt(string filePath)
     {
         var quotas = new List<(string Name, int Quantity)>();
-        numberOfGroups = 0;
 
         using (var reader = new StreamReader(filePath))
         {
             string line = reader.ReadLine();
             if (line != null)
             {
-                var parts = line.Split('-');
-                if (parts.Length == 2 && int.TryParse(parts[1].Trim(), out int result))
-                {
-                    numberOfGroups = result;
-                }
-                else
-                {
-                    throw new FormatException("Отсутствует количество групп/участников для квоты.");
-                }
-
                 while ((line = reader.ReadLine()) != null)
                 {
                     if (string.IsNullOrWhiteSpace(line)) continue;
@@ -206,81 +203,94 @@ class Program
     }
 
     /// <summary>
-    /// Вычисление и распределение по группам квоты
+    /// Вычисление и распределение по группам квоты пропорционально количеству бойцов с использованием алгоритма round-robin
     /// </summary>
     /// <param name="quotas">Список с общей квотой</param>
-    /// <param name="numberOfGroups">Количество групп для распределения</param>
-    /// <param name="isUsingMassProduct">Флаг использование фабрики массвого производства</param>
-    /// <returns></returns>
-    static List<List<Quota>> SplitIntoGroups(List<Quota> quotas, int numberOfGroups, bool isUsingMassProduct)
+    /// <param name="numberOfFighters">Список численности бойцов в каждом подразделении</param>
+    /// <param name="isUsingMassProduct">Флаг использования фабрики массового производства</param>
+    /// <returns>Готовый список с квотой</returns>
+    static List<List<Quota>> SplitIntoGroups(List<Quota> quotas, List<int> numberOfFighters, bool isUsingMassProduct)
     {
+        int numberOfGroups = numberOfFighters.Count;
         var groupedQuotas = new List<List<Quota>>(numberOfGroups);
+        var totalFighters = numberOfFighters.Sum();
 
         List<Quota> splitQuotas = new List<Quota>();
 
-        // Сплит квот по группам
+        // Разбивка квот
         foreach (var quota in quotas)
         {
-            //С учётом фабрики массового производства
             if (isUsingMassProduct && quota.IsMassFactory && !quota.IsVehicle)
             {
                 while (quota.Quantity > 9)
                 {
-                    var newQuota = new Quota(quota.Name, 9, CalculationQuota(9, quota.Bmats), CalculationQuota(9, quota.Emats), CalculationQuota(9, quota.Rmats), CalculationQuota(9, quota.Hmats), quota.IsMassFactory, quota.IsVehicle);
-                    splitQuotas.Add(newQuota);
+                    splitQuotas.Add(new Quota(quota.Name, 9, CalculationQuota(9, quota.Bmats), CalculationQuota(9, quota.Emats), CalculationQuota(9, quota.Rmats), CalculationQuota(9, quota.Hmats), quota.IsMassFactory, quota.IsVehicle));
                     quota.Quantity -= 9;
                 }
-                splitQuotas.Add(new Quota(quota.Name, quota.Quantity, CalculationQuota(quota.Quantity, quota.Bmats), CalculationQuota(quota.Quantity, quota.Emats), CalculationQuota(quota.Quantity, quota.Rmats), CalculationQuota(quota.Quantity, quota.Hmats), quota.IsMassFactory, quota.IsVehicle));
+                if (quota.Quantity > 0)
+                    splitQuotas.Add(new Quota(quota.Name, quota.Quantity, CalculationQuota(quota.Quantity, quota.Bmats), CalculationQuota(quota.Quantity, quota.Emats), CalculationQuota(quota.Quantity, quota.Rmats), CalculationQuota(quota.Quantity, quota.Hmats), quota.IsMassFactory, quota.IsVehicle));
             }
-
-            //Обычная фабрика
-            if ((!isUsingMassProduct || !quota.IsMassFactory) && !quota.IsVehicle)
+            else if ((!isUsingMassProduct || !quota.IsMassFactory) && !quota.IsVehicle)
             {
                 while (quota.Quantity > 4)
                 {
-                    var newQuota = new Quota(quota.Name, 4, 4 * quota.Bmats, 4 * quota.Emats, 4 * quota.Rmats, 4 * quota.Hmats, quota.IsMassFactory, quota.IsVehicle);
-                    splitQuotas.Add(newQuota);
+                    splitQuotas.Add(new Quota(quota.Name, 4, 4 * quota.Bmats, 4 * quota.Emats, 4 * quota.Rmats, 4 * quota.Hmats, quota.IsMassFactory, quota.IsVehicle));
                     quota.Quantity -= 4;
                 }
-                splitQuotas.Add(new Quota(quota.Name, quota.Quantity, quota.Quantity * quota.Bmats, quota.Quantity * quota.Emats, quota.Quantity * quota.Rmats, quota.Quantity * quota.Hmats, quota.IsMassFactory, quota.IsVehicle));
+                if (quota.Quantity > 0)
+                    splitQuotas.Add(new Quota(quota.Name, quota.Quantity, quota.Quantity * quota.Bmats, quota.Quantity * quota.Emats, quota.Quantity * quota.Rmats, quota.Quantity * quota.Hmats, quota.IsMassFactory, quota.IsVehicle));
             }
-
-            //Техника и коробочки
-            if (quota.IsVehicle)
+            else if (quota.IsVehicle)
             {
                 while (quota.Quantity > 5)
                 {
-                    var newQuota = new Quota(quota.Name, 5, CalculationQuota(5, quota.Bmats), CalculationQuota(5, quota.Emats), CalculationQuota(5, quota.Rmats), CalculationQuota(5, quota.Hmats), quota.IsMassFactory, quota.IsVehicle);
-                    splitQuotas.Add(newQuota);
+                    splitQuotas.Add(new Quota(quota.Name, 5, CalculationQuota(5, quota.Bmats), CalculationQuota(5, quota.Emats), CalculationQuota(5, quota.Rmats), CalculationQuota(5, quota.Hmats), quota.IsMassFactory, quota.IsVehicle));
                     quota.Quantity -= 5;
                 }
-                splitQuotas.Add(new Quota(quota.Name, quota.Quantity, CalculationQuota(quota.Quantity, quota.Bmats), CalculationQuota(quota.Quantity, quota.Emats), CalculationQuota(quota.Quantity, quota.Rmats), CalculationQuota(quota.Quantity, quota.Hmats), quota.IsMassFactory, quota.IsVehicle));
+                if (quota.Quantity > 0)
+                    splitQuotas.Add(new Quota(quota.Name, quota.Quantity, CalculationQuota(quota.Quantity, quota.Bmats), CalculationQuota(quota.Quantity, quota.Emats), CalculationQuota(quota.Quantity, quota.Rmats), CalculationQuota(quota.Quantity, quota.Hmats), quota.IsMassFactory, quota.IsVehicle));
             }
         }
 
         // Инициализация групп
         for (int i = 0; i < numberOfGroups; i++)
-        {
             groupedQuotas.Add(new List<Quota>());
-        }
 
-        // Сортировка по Bmats
-        var sortedQuotas = splitQuotas.OrderByDescending(q => q.Bmats);
-        //q.Quantity * q.Bmats + q.Quantity * q.Emats * ratio + q.Quantity * q.Rmats + q.Quantity * q.Hmats);
+        // Разделение на значимые и нейтральные квоты
+        var importantQuotas = splitQuotas.Where(q => q.Bmats > 0).OrderByDescending(q => q.Bmats).ToList();
+        var neutralQuotas = splitQuotas.Where(q => q.Bmats == 0).ToList();
 
-        // Распределение по группам
-        int groupCount = groupedQuotas.Count;  // Количество групп
-        int currentIndex = 0;  // Индекс текущей группы
+        // Пропорциональное распределение важных квот (по численности)
+        double totalBmats = importantQuotas.Sum(q => q.Bmats);
+        List<double> groupBmatsLimits = numberOfFighters.Select(f => totalBmats * f / totalFighters).ToList();
+        List<double> groupCurrentBmats = new List<double>(new double[numberOfGroups]);
 
-        foreach (var quota in sortedQuotas)
+        foreach (var quota in importantQuotas)
         {
-            // Добавляем в текущую группу
-            groupedQuotas.ElementAt(currentIndex).Add(quota);
+            int targetGroup = 0;
+            double minFillPercent = double.MaxValue;
 
-            // Переходим к следующей группе
-            currentIndex = (currentIndex + 1) % groupCount;  // Это обеспечивает циклический переход через группы
+            for (int i = 0; i < numberOfGroups; i++)
+            {
+                double percent = groupCurrentBmats[i] / groupBmatsLimits[i];
+                if (percent < minFillPercent)
+                {
+                    minFillPercent = percent;
+                    targetGroup = i;
+                }
+            }
+
+            groupedQuotas[targetGroup].Add(quota);
+            groupCurrentBmats[targetGroup] += quota.Bmats;
         }
 
+        // Равномерное распределение нейтральных квот (по кругу)
+        int currentNeutralIndex = 0;
+        foreach (var quota in neutralQuotas)
+        {
+            groupedQuotas[currentNeutralIndex].Add(quota);
+            currentNeutralIndex = (currentNeutralIndex + 1) % numberOfGroups;
+        }
 
         return groupedQuotas;
     }
@@ -294,14 +304,14 @@ class Program
     static int CalculationQuota(int quantity, int cost)
     {
         List<double> coefficients = new List<double> { 0.9, 0.8, 0.7, 0.6, 0.5, 0.5, 0.5, 0.5, 0.5 };
+        double result = 0;
 
-        double results = 0;
-
-        for (int i = 0; i < quantity;  i++)
+        for (int i = 0; i < quantity && i < coefficients.Count; i++)
         {
-            results += coefficients[i] * cost;
+            result += coefficients[i] * cost;
         }
 
-        return (int)results;
+        return (int)Math.Round(result);
     }
+
 }
